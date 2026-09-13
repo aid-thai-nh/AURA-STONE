@@ -1,0 +1,356 @@
+/* ==========================================================================
+   AURA & STONE — ARCHITECTURAL RESPONSIVE STYLESHEET
+   Specific Breakpoints as strictly specified:
+   1. @media (max-width: 575px)
+   2. @media (min-width: 540px) and (max-width: 575px)
+   3. @media (min-width: 576px) and (max-width: 767px)
+   4. @media (min-width: 768px) and (max-width: 1023px)
+   5. @media (min-width: 1024px) and (max-width: 1279px)
+   6. @media (min-width: 1280px) and (max-width: 1439px)
+   7. @media (min-width: 1440px) and (max-width: 1500px)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   GLOBAL CONTAINER & BASE RESPONSIVE HELPERS
+   -------------------------------------------------------------------------- */
+.resp-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1440px;
+}
+
+/* --------------------------------------------------------------------------
+   1. BREAKPOINT: Extra Small Devices (Phones, Portrait)
+      @media (max-width: 575px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 575px) {
+  /* Layout & Padding */
+  .resp-section-padding {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+  }
+
+  .resp-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  /* Typography Scales */
+  .font-display-hero {
+    font-size: 2.25rem !important;
+    line-height: 1.15 !important;
+    letter-spacing: -0.01em !important;
+  }
+
+  .font-headline-xl {
+    font-size: 1.85rem !important;
+    line-height: 1.2 !important;
+  }
+
+  .font-headline-lg {
+    font-size: 1.5rem !important;
+    line-height: 1.25 !important;
+  }
+
+  .font-headline-md {
+    font-size: 1.25rem !important;
+  }
+
+  /* Grids & Cards */
+  .resp-grid-1col {
+    grid-template-columns: 1fr !important;
+  }
+
+  .resp-grid-furniture {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+
+  .resp-grid-projects {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+
+  .resp-stack-mobile {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+
+  .resp-btn-full {
+    width: 100% !important;
+    text-align: center !important;
+    justify-content: center !important;
+  }
+
+  /* Ant Design Drawer & Modals on Small Mobile */
+  .ant-drawer-content-wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .ant-modal {
+    max-width: calc(100vw - 16px) !important;
+    margin: 8px auto !important;
+  }
+
+  /* Floating Concierge on Small Mobile */
+  .floating-concierge-btn {
+    bottom: 1rem !important;
+    right: 1rem !important;
+    padding: 0.65rem 0.9rem !important;
+    font-size: 10px !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   2. BREAKPOINT: Large Phone Portrait / Compact Landscape Transition
+      @media (min-width: 540px) and (max-width: 575px)
+   -------------------------------------------------------------------------- */
+@media (min-width: 540px) and (max-width: 575px) {
+  .resp-section-padding {
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+    padding-top: 4.5rem !important;
+    padding-bottom: 4.5rem !important;
+  }
+
+  .font-display-hero {
+    font-size: 2.45rem !important;
+    line-height: 1.12 !important;
+  }
+
+  .resp-hero-actions {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 0.75rem !important;
+  }
+
+  .resp-hero-actions > * {
+    flex: 1 1 0% !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   3. BREAKPOINT: Large Mobile & Phablet Devices
+      @media (min-width: 576px) and (max-width: 767px)
+   -------------------------------------------------------------------------- */
+@media (min-width: 576px) and (max-width: 767px) {
+  .resp-section-padding {
+    padding-left: 1.75rem !important;
+    padding-right: 1.75rem !important;
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
+  }
+
+  .resp-container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .font-display-hero {
+    font-size: 2.65rem !important;
+    line-height: 1.1 !important;
+  }
+
+  .font-headline-xl {
+    font-size: 2.1rem !important;
+  }
+
+  .resp-grid-furniture {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 1.5rem !important;
+  }
+
+  .resp-grid-specs {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .resp-stack-mobile {
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+  }
+
+  .ant-drawer-content-wrapper {
+    width: 480px !important;
+    max-width: 90vw !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   4. BREAKPOINT: Tablet Portrait
+      @media (min-width: 768px) and (max-width: 1023px)
+   -------------------------------------------------------------------------- */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .resp-section-padding {
+    padding-left: 2.25rem !important;
+    padding-right: 2.25rem !important;
+    padding-top: 6rem !important;
+    padding-bottom: 6rem !important;
+  }
+
+  .resp-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .font-display-hero {
+    font-size: 3.25rem !important;
+    line-height: 1.1 !important;
+  }
+
+  .font-headline-xl {
+    font-size: 2.5rem !important;
+  }
+
+  .resp-grid-furniture {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 2rem !important;
+  }
+
+  .resp-grid-projects {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 2rem !important;
+  }
+
+  .resp-grid-events {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 1.75rem !important;
+  }
+
+  .ant-drawer-content-wrapper {
+    width: 520px !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   5. BREAKPOINT: Tablet Landscape / Small Desktop & Ultrabook
+      @media (min-width: 1024px) and (max-width: 1279px)
+   -------------------------------------------------------------------------- */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .resp-section-padding {
+    padding-left: 2.75rem !important;
+    padding-right: 2.75rem !important;
+    padding-top: 6.5rem !important;
+    padding-bottom: 6.5rem !important;
+  }
+
+  .resp-container {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .font-display-hero {
+    font-size: 3.85rem !important;
+    line-height: 1.08 !important;
+  }
+
+  .font-headline-xl {
+    font-size: 2.85rem !important;
+  }
+
+  .resp-grid-furniture {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 1.75rem !important;
+  }
+
+  .resp-grid-events {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 2rem !important;
+  }
+
+  .resp-nav-spacing {
+    gap: 1.5rem !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   6. BREAKPOINT: Standard Desktop & Laptop
+      @media (min-width: 1280px) and (max-width: 1439px)
+   -------------------------------------------------------------------------- */
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .resp-section-padding {
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+    padding-top: 7rem !important;
+    padding-bottom: 7rem !important;
+  }
+
+  .resp-container {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .font-display-hero {
+    font-size: 4.25rem !important;
+    line-height: 1.06 !important;
+  }
+
+  .font-headline-xl {
+    font-size: 3.1rem !important;
+  }
+
+  .resp-grid-furniture {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 2rem !important;
+  }
+
+  .resp-grid-events {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 2rem !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   7. BREAKPOINT: Luxury Standard Architectural Viewport (1440px - 1500px)
+      @media (min-width: 1440px) and (max-width: 1500px)
+   -------------------------------------------------------------------------- */
+@media (min-width: 1440px) and (max-width: 1500px) {
+  .resp-section-padding {
+    padding-left: 3.5rem !important;
+    padding-right: 3.5rem !important;
+    padding-top: 7.5rem !important;
+    padding-bottom: 7.5rem !important;
+  }
+
+  .resp-container {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .font-display-hero {
+    font-size: 4.75rem !important;
+    line-height: 1.05 !important;
+    letter-spacing: -0.02em !important;
+  }
+
+  .font-headline-xl {
+    font-size: 3.25rem !important;
+  }
+
+  .resp-grid-furniture {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 2.25rem !important;
+  }
+
+  .resp-grid-events {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 2.25rem !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   ULTRA-WIDE CENTERING (Above 1500px)
+   -------------------------------------------------------------------------- */
+@media (min-width: 1501px) {
+  .resp-container {
+    max-width: 1440px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}

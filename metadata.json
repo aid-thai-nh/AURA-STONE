@@ -1,0 +1,6 @@
+{
+  "name": "AURA & STONE — Kiến Trúc & Nội Thất Kiệt Tác",
+  "description": "Chuyên khảo kiến trúc sang trọng đỉnh cao và giám tuyển không gian nội thất độc bản tại Milan, Paris và Hà Nội. Tỷ lệ nguyên khối, vật liệu đá tự nhiên tuyệt mỹ và sự tĩnh lặng vô song.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
